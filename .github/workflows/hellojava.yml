@@ -15,6 +15,6 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Compile Java program
-        run: javac hello.java
-      - name: Run hello
-        run: java hello.java
+        run: javac Hello.java
+      - name: Run Hello
+        run: java Hello.java
