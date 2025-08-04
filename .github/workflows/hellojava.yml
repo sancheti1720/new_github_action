@@ -1,0 +1,18 @@
+name: Run Java and Python Programs
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run-java:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with: distribution:'temurin' java-version:'17'
+      - name: Compile Java program
+        run: javac hello.java
+      - name: Run hello
+        run: java hello.java
