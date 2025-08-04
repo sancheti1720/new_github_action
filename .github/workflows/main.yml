@@ -1,0 +1,8 @@
+name: Basic Commands
+on: -[push]
+jobs:
+  demo-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show current working directory
+        run: pwd
