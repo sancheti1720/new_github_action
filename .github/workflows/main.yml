@@ -1,5 +1,6 @@
 name: Basic Commands
-on: -[push]
+on: 
+  - push
 jobs:
   demo-commands:
     runs-on: ubuntu-latest
